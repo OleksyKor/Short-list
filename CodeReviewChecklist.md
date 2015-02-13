@@ -1,6 +1,6 @@
 # Code Review Checklist
 
-##General
+## General
 
 * Does the code work? Does it perform its intended function, the logic is correct etc.
 * Is all the code easily understood?
@@ -12,3 +12,10 @@
 * Do loops have a set length and correct termination conditions?
 * Can any of the code be replaced with library functions?
 * Can any logging or debugging code be removed?
+
+## Security
+
+* Are all data inputs checked (for the correct type, length, format, and range) and encoded?
+* Where third-party utilities are used, are returning errors being caught?
+* Are output values checked and encoded?
+* Are invalid parameter values handled?
